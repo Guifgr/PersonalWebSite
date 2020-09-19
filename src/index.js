@@ -4,11 +4,13 @@ import Header from './components/Header';
 import Main from './/components/Main';
 import "./index.css";
 import * as serviceWorker from './serviceWorker';
+import Section from './components/Section';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Main />
+    <Section />
   </React.StrictMode>,
   document.getElementById('root')
 );
