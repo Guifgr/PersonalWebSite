@@ -1,5 +1,5 @@
 import React from "react"
-import euzinho from "../img/euzinho.jpg"
+import euzinho from "../../img/euzinho.webp"
 
 function Picture(){
     return(

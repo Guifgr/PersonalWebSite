@@ -2,15 +2,19 @@ import React from 'react';
   import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import Main from './/components/Main';
+import Section from './components/Section';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import "./index.css";
 import * as serviceWorker from './serviceWorker';
-import Section from './components/Section';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Main />
     <Section />
+    <Contact />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

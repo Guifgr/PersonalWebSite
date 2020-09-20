@@ -9,24 +9,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
-
-code {
-font-family: 'Montserrat', sans-serif;
+main{
+  height: 90vh;
 }
 
-@media only screen and (max-width: 1280px) {
-  main{
-    height: auto !important;
+code {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about {
+    margin-top: "80vh"!important
   }
-  .full{
-    width: 100% !important;
-    margin-bottom: 3vh;
+  main{
+    height: 110vh !important;
   }
   .me {
-    font-size: 3em !important;
+  font-size: 5em !important;
   }
-  .about {
-    font-size: 2em !important;
+  
+}
+@media only screen and (max-width: 1280px) {
+      main{
+        height: auto !important;
+      }
+  .full{
+    width: 100% !important;
+  }
+    .me {
+    font-size: 3em !important;
   }
   .chevrom{
     margin-top: 80vh;
@@ -36,12 +47,5 @@ font-family: 'Montserrat', sans-serif;
     margin-left: auto !important;
     margin-right: auto !important;
     float: none !important;
-  }
-  .icon{
-    display: flex;
-  }
-  .imgIcon{
-    width: 13vh !important;
-    height: auto !important;
   }
 }

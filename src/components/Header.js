@@ -1,5 +1,5 @@
 import React from 'react';
-import headerImg from '../img/headerImg.jpg';
+import headerImg from '../img/headerImg.webp';
 import '../index.css';
 
 function Header() {
@@ -33,7 +33,7 @@ const textStyle ={
   fontSize: "8em"
 };
 const about ={
-  marginTop: "65vh",
+  marginTop: "75vh",  
   marginLeft: "10vw",
   position: "absolute",
   color: "white",

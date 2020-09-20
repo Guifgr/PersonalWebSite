@@ -1,14 +1,18 @@
 import React from "react";
-import Text from "./Text";
-import SpacedText from "./SpacedText";
+import Text from "./microComponents/Text";
+import SpacedText from "./microComponents/SpacedText";
+import BigText from "./microComponents/BigText";
 
-import Picture from "./Picture.js";
+import Picture from "./microComponents/Picture";
 
 function Main(){
      return(
-        <main style={{height: "92vh", borderBottom: "10px solid #0f62fe"}}>
+        <main style={{height: "95vh", borderBottom: "10px solid #0f62fe"}}>
+           
             <SpacedText text="SOBRE" />
-            <h5 style={h1}>Hello World!</h5>
+            
+            <BigText color="#4a4a4a" text="Hello world!" />
+            
 
             <Text />
 
@@ -19,11 +23,4 @@ function Main(){
      );
  };
 
-
-const h1={
-    marginTop: "1vh",
-    textAlign: "center",
-    fontSize: "5vh",
-    color: "#4c4c4c",
-}
  export default Main;

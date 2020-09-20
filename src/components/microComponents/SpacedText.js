@@ -8,7 +8,7 @@ function SpacedText(props){
 
 const h5={
     marginTop: "5vh",
-    color: "blue",
+    color: "#3273dc",
     textAlign: "center",
     fontSize: "1em",
     fontWeight: '400',
