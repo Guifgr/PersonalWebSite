@@ -8,19 +8,19 @@ function Icons(){
         <div className="icon" style={Icon}>
             <div className="icons" style={iconDiv}>
                 <a href="https://github.com/Guifgr">
-                    <img alt="git" className="imgIcon" style={iconImg} src={gitLogo}></img>
+                    <img loading="lazy" alt="git" className="imgIcon" style={iconImg} src={gitLogo}></img>
                 </a>
             </div>
         
             <div className="icons" style={iconDiv}>
                 <a href="https://www.linkedin.com/in/guifgr/">
-                    <img alt="linkedin" className="imgIcon" style={iconImg} src={LinkedInLogo}></img>
+                    <img loading="lazy" alt="linkedin" className="imgIcon" style={iconImg} src={LinkedInLogo}></img>
                 </a>
             </div>
 
             <div className="icons" style={iconDiv}>
                 <a href="https://www.instagram.com/guifgr/">
-                    <img alt="insta" className="imgIcon" style={iconImg} src={InstaLogo}></img>
+                    <img loading="lazy" alt="insta" className="imgIcon" style={iconImg} src={InstaLogo}></img>
                 </a>
             </div>
 

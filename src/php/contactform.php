@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submit'])) {
+
     
     $Nome = iconv('UTF-8', 'ISO-8859-1//TRANSLIT//IGNORE', $_POST['nome']);
     $Sobrenome = iconv('UTF-8', 'ISO-8859-1//TRANSLIT//IGNORE', $_POST['sobrenome']);
@@ -10,10 +10,8 @@ if (isset($_POST['submit'])) {
     $mailTo = "guifgr@hotmail.com";
     $headers = "De: ".$Email;
     $subject = "Novo email recebido no seu site!";
-    $txt = "Voce recebeu um email de: ".$Nome." ".$Sobrenome.".\n\nA pergunta foi:\n".$Message."\n\nTelefone: ".$Telefone;
-    
+    $txt = "Voce recebeu um email de: ".$Nome." ".$Sobrenome.".\n\nA pergunta foi:\n".$Message."\n\nSeus dados sao:\nTelefone: ".$Telefone."\nEmail:".$Email;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.html");
-    }
+    header("Location: https://guilhermefgr.com.br/?send=1 ");
 ?>

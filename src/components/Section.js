@@ -12,15 +12,15 @@ function Section(){
             <h5 style={h1}>Check <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this" target="_blank" rel="noopener noreferrer" style={{color:"white", textDecoration: "none"}}><i>.this</i></a> out</h5>
             <div  className="full" style={theImgDiv}>
                 <a className="full" href="http://imperiodaspalmeiras.com.br/">
-                    <img className="full" alt="imperioDasPalmeiras" src={imperioDasPalmeiras} style={Img}></img>
+                    <img loading="lazy" className="full" alt="imperioDasPalmeiras" src={imperioDasPalmeiras} style={Img}></img>
                 </a>
     
                 <a href="https://chalestriunfo.com.br/">
-                    <img className="full" alt="chalesTriunfo" src={chalesTriunfo} style={Img}></img>
+                    <img loading="lazy" className="full" alt="chalesTriunfo" src={chalesTriunfo} style={Img}></img>
                 </a>
     
                 <a href="https://github.com/Guifgr/Exron">
-                    <img className="full" alt="exron" src={exron} style={Img}></img>
+                    <img loading="lazy" className="full" alt="exron" src={exron} style={Img}></img>
                 </a>
             </div>
             <a href="https://github.com/Guifgr" style={{textDecoration:"none"}}>

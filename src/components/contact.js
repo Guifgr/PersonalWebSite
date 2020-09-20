@@ -11,7 +11,7 @@ function Contact(){
             
             <p style={p}>Mande um email caso precise de mais alguma informação, comentário sobre projeto, orçamentos ou até mesmo para marcar um café!</p>
             
-            <form action={formPhp}>
+            <form method="post" action={formPhp}>
                 <div  style={FormLineStyle} className="formLine">
                     <input className="half" style={inputStyle} type="text" id="nome" placeholder="Nome" title="nome" name="nome"></input>
                     <input className="half" style={inputStyle} type="text" id="sobrenome" placeholder="Sobrenome" title="sobrenome" name="sobrenome"></input>
@@ -26,7 +26,7 @@ function Contact(){
                 </div>
 
                 <div style={btnDiv}>
-                    <input style={btn} type="submit" value="Offline :("></input>
+                    <input style={btn} type="submit"></input>
                 </div>
 
 
@@ -77,7 +77,7 @@ const btn={
     cursor:" pointer",
     transition:" all 70ms cubic-bezier(0,0,.38,.9)",
     color: "#fff",
-    backgroundColor: "red",
+    backgroundColor: "#0f62fe",
     border: "1px solid transparent",
 }
 
