@@ -1,68 +1,134 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Guilhermefgr.com.br
 
-## Available Scripts
+> Meu site pessoal onde posso mostrar ao mundo quem sou e receber clientes (quem sabe?)
 
-In the project directory, you can run:
+> My personal webSite where i can show to the world who am i and get in contact with clients (who knows?)
 
-### `npm start`
+## Pré-requisitos
+## Prerequisites
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> Exemplo (Para criar uma aplicação com React):
+> - **Node** >= 12.18.4 lts - [Node Donwload](https://nodejs.org/pt-br/download/)
+> - **NPM** >= 6.14.6 - [Npm Donwload](https://www.npmjs.com/package/download)
 
-### `npm test`
+## Instalação
+## Installation
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Clone esse projeto em seu computador com o comando:
+> ```
+> 	git clone [https://github.com/Guifgr/PersonalWebSite]
+> ```
+> Acesse a pasta do projeto seu terminal:
+> ```
+> 	cd [PersonalWebSite]
+> ```
+> Já pasta da aplicação em seu terminal, digite o seguinte comando:
+> ```
+> 	npm install
+> ```
 
-### `npm run build`
+> First clone the project to your computer (or phone who knows? haha):
+> ```
+> 	git clone [https://github.com/Guifgr/PersonalWebSite]
+> ```
+> Go to the project path:
+> ```
+> 	cd [PersonalWebSite]
+> ```
+> And now you just need to install with the npm, node previously installed
+> ```
+> 	npm install
+> ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Execução
+## Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+> Após ter configurado o projeto e ter aguardado a instalação das dependencias de desenvolvimento, execute o comando:
+> ```
+> 	npm start
+> ```
+> A aplicação estará disponível para visualização em seu navegador, caso isso não aconteça automaticamente abre o navegador no seguinte endereço: _localhost:3000_
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Compilar
+## Compile
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Para criar um arquivo compilado e completamente otimizado para produção
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> ```
+> 	npm run build
+> ```
+> A aplicação estará disponível para visualização em seu navegador, caso isso não aconteça automaticamente abre o navegador no seguinte endereço: _localhost:3000_
 
-## Learn More
+> To create an optimized production build
+> ```
+> 	npm run build
+> ```
+> The aplication will be displayed automatically on your default browser on _localhost:3000_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Funcionalidades
+## Features
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+> Este projeto visa cada vez mais ser mais simples para implementar react com php puro: 
+> - Conseguir abstrair com simplicidade cada prop e fazer um template simples para sites
 
-### Analyzing the Bundle Size
+> - To be honest i just wanna bring simplicity to make an first react website (template)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+## Links
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Meus agradecimentos a quem me ajudou mesmo que não saiba!
+Many tnx!
 
-### Advanced Configuration
+> - [Bruno Germano](https://egermano.com/)
+> - [README-Template-PTBR](https://github.com/LuAnderson/README-Template-PTBR)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+## Contribuições
+Tenho alguns erros a resolver ainda :(
+Mas já que está aqui eu ficaria imensamente grato em receber sua ajuda!
+E claro eu vou colocar seu nome aqui!!!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+> - Para contribuir com esse projeto, fork este projeto, faça as modificações que deseja e crie um pull request;
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Autores
+
+> - **Guilherme Fernandes Gomes da Rocha** - [Github](https://github.com/guifgr) | [Site](https://guilhermefgr.com.br/)
+
+
+## Licença 
+
+The MIT License (MIT)
+
+Copyright (c) [2020] [Guilherme Fernandes Gomes da Rocha]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+> MIT License (MIT)
+
+## Agradecimentos 
+
+> [@IamHerica](https://github.com/IamHerica) ❤ For the tests and to be the love of my life
+
+> [@yanandrey](https://github.com/yanandrey) For test and be a friend for life
