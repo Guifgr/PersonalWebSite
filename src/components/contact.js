@@ -26,7 +26,7 @@ function Contact(){
                 </div>
 
                 <div style={btnDiv}>
-                    <input style={btn} type="submit"></input>
+                    <button style={btn} type="submit">Enviar</button>
                 </div>
 
 
@@ -58,19 +58,15 @@ const textarea={
 const btn={
     fontSize:" .875rem",
     fontWeight:" 800",
-    lineHeight:" 1.125rem",
-    letterSpacing:" .16px",
     position:" relative",
-    display:" inline-flex",
     flexShrink:" 0",
     alignItems:" center",
     justifyContent:" space-between",
     maxWidth:" 20rem",
+    minWidth:" 6rem",
     minHeight:" 3rem",
     margin:" 0",
-    padding:" calc(.875rem - 3px) 63px calc(.875rem - 3px) 15px",
     textDecoration:" none",
-    verticalAlign:" top",
     borderRadius:" 0",
     outline:" none",
     cursor:" pointer",
@@ -78,6 +74,7 @@ const btn={
     color: "#fff",
     backgroundColor: "#0f62fe",
     border: "1px solid transparent",
+    textAlign: "center"
 }
 
 const btnDiv={

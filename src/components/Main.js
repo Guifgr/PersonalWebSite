@@ -2,7 +2,6 @@ import React from "react";
 import Text from "./microComponents/Text";
 import SpacedText from "./microComponents/SpacedText";
 import BigText from "./microComponents/BigText";
-
 import Picture from "./microComponents/Picture";
 
 function Main(){

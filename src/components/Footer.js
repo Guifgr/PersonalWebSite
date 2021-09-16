@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import Twenty from '../img/Twenty-One-Pilots-Logo.png';
+import TwentyMini from '../img/Twenty-One-Pilots-LogoMini.png';
 
 function Footer(){
-    const [count, setCount] = useState(0.1);
+    const [count, setCount] = useState(0.2);
     var display = "none"
     // eslint-disable-next-line default-case
     if(count>1){
@@ -12,7 +13,10 @@ function Footer(){
     return(
         <footer>
             <p style={{textAlign: "center"}}>
-            <img loading="eager" src={Twenty} alt="music" style={{opacity: count, height: "30px",left: "100px",}} onClick={() => setCount(count + 0.31)}></img>
+            <img loading="eager" src={TwentyMini} alt="music" style={{
+                opacity: count, 
+                height: "30px",
+                }} onClick={() => setCount(count + 0.3)}></img>
              Guifgr © {(new Date().getFullYear())}            
             </p>
             <img loading="eager" src={Twenty} alt="music" style={{

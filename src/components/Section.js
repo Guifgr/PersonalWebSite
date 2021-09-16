@@ -1,6 +1,6 @@
 import React from "react"
 import chalesTriunfo from "../img/chalesTriunfo.webp"
-import imperioDasPalmeiras from "../img/imperioDasPalmeiras.webp"
+import imperioDasPalmeiras from "../img/imperioDasPalmeiras.png"
 import exron from "../img/exron.webp"
 import SpacedText from "./microComponents/SpacedText";
 
