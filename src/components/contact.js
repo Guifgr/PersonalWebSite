@@ -57,7 +57,7 @@ const textarea={
 }
 const btn={
     fontSize:" .875rem",
-    fontWeight:" 400",
+    fontWeight:" 800",
     lineHeight:" 1.125rem",
     letterSpacing:" .16px",
     position:" relative",
@@ -69,7 +69,6 @@ const btn={
     minHeight:" 3rem",
     margin:" 0",
     padding:" calc(.875rem - 3px) 63px calc(.875rem - 3px) 15px",
-    textAlign:" left",
     textDecoration:" none",
     verticalAlign:" top",
     borderRadius:" 0",

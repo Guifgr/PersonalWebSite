@@ -11,8 +11,9 @@ function Footer(){
     }
     return(
         <footer>
-            <p style={{textAlign: "center"}}>Todos os direitos reservados © Guifgr {(new Date().getFullYear())}
+            <p style={{textAlign: "center"}}>
             <img loading="eager" src={Twenty} alt="music" style={{opacity: count, height: "30px",left: "100px",}} onClick={() => setCount(count + 0.31)}></img>
+             Guifgr © {(new Date().getFullYear())}            
             </p>
             <img loading="eager" src={Twenty} alt="music" style={{
                 position: "fixed",
@@ -20,7 +21,7 @@ function Footer(){
                 left: "0px",
                 width: "100%",
                 height: "100%",
-                objectFit: "fill",
+                objectFit: "cover",
                 display: display,
                 zIndex: 10
             }}
