@@ -13,5 +13,5 @@
     $txt = "Voce recebeu um email de: ".$Nome." ".$Sobrenome.".\n\nA pergunta foi:\n".$Message."\n\nSeus dados sao:\nTelefone: ".$Telefone."\nEmail:".$Email;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: https://guilhermefgr.com.br/?send=1 ");
+    header("Location: https://guifgr.com/?send=1 ");
 ?>
