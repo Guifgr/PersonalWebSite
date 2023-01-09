@@ -1,4 +1,4 @@
-# Guilhermefgr.com.br
+# Guifgr.com
 
 > Meu site pessoal onde posso mostrar ao mundo quem sou e receber clientes (quem sabe?)
 
@@ -101,7 +101,7 @@ E claro eu vou colocar seu nome aqui!!!
 
 ## Autores
 
-> - **Guilherme Fernandes Gomes da Rocha** - [Github](https://github.com/guifgr) | [Site](https://guilhermefgr.com.br/)
+> - **Guilherme Fernandes Gomes da Rocha** - [Github](https://github.com/guifgr) | [Site](https://guifgr.com/)
 
 
 ## Licença 
