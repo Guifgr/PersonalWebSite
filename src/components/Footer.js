@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import Twenty from '../img/Twenty-One-Pilots-Logo.png';
-import TwentyMini from '../img/Twenty-One-Pilots-LogoMini.png';
+import Twenty from '../img/Twenty-One-Pilots-Logo.webp';
+import TwentyMini from '../img/Twenty-One-Pilots-LogoMini.webp';
 
 function Footer() {
     const [count, setCount] = useState(0.2);

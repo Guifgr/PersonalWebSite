@@ -1,5 +1,5 @@
 import React from "react";
-import euzinho from "../../img/euzinho.webp";
+import euzinho from "../../img/eu.webp";
 
 function Picture() {
     return (

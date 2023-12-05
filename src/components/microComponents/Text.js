@@ -8,30 +8,30 @@ function Text() {
             style={{ float: "left", marginLeft: "15%", width: "34.5%" }}
         >
             <p style={{ marginTop: "0", marginBottom: "1vh" }}>
-                Me chamo Guilherme atualmente estudo na Universidade de Mogi das
+                Me chamo Guilherme sou formado na Universidade de Mogi das
                 Cruzes, amo tecnologia, trabalho como{" "}
                 <a style={{ color: "black" }} href="https://dev.to/guifgr">
-                    <b>Arquiteto Corporativo</b>
+                    <b>Software Engineer II</b>
                 </a>{" "}
-                e <b>Mentor</b> na{" "}
-                <a style={{ color: "black" }} href="https://www.meta.com.br/">
+                na{" "}
+                <a style={{ color: "black" }} href="https://www.xpinc.com/">
                     <b>META</b>
                 </a>
                 , um dos meus maiores hobbies é basquete e automação.
             </p>
 
             <p style={{ marginBottom: "1vh" }}>
-                Estudo <b>Sistemas de Informação</b> e passei por{" "}
+                Estudei <b>Sistemas de Informação</b> e passei por{" "}
                 <b>Ciência da Computação</b>, adoro estudar programação e quando
                 me sinto desmotivado sempre penso em como eu poderia solucionar
                 algum problema do dia a dia.
             </p>
 
             <p style={{ marginBottom: "1vh" }}>
-                Atualmente tenho alguns sites no ar como o{" "}
+                Atualmente tenho alguns sites feitos para clientes como o{" "}
                 <a
                     style={{ color: "black" }}
-                    href="https://chalestriunfo.com.br/"
+                    href="https://github.com/Guifgr/chalestriunfo"
                 >
                     Chalés Triunfo
                 </a>{" "}
