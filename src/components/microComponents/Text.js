@@ -9,8 +9,8 @@ function Text() {
         >
             <p style={{ marginTop: "0", marginBottom: "1vh" }}>
                 Me chamo Guilherme sou formado na Universidade de Mogi das
-                Cruzes, amo tecnologia, um dos meus maiores hobbies é basquete e automação.
-                 <br /> Trabalho como{" "}
+                Cruzes, amo tecnologia, os meus maiores hobbies são basquete e automação.
+                 <br /><br /> Sou{" "}
                 <a style={{ color: "black" }} href="https://dev.to/guifgr">
                     <b>Software Engineer II</b>
                 </a>{" "}
