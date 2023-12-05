@@ -43,7 +43,7 @@ function Text() {
             </p>
 
             <p style={{ marginBottom: "1vh" }}>
-                Adoro lidar com tecnologia seja hardware ou software, desde cedo
+                Adoro trabalhar com tecnologia seja hardware ou software, desde cedo
                 desmontava tudo que era eletrônico e até hoje gosto do handmade
                 e sonho em morar em uma casa automatizada, pois a vida é um
                 projeto DIY!
