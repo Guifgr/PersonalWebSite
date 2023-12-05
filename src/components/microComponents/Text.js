@@ -15,7 +15,7 @@ function Text() {
                 </a>{" "}
                 na{" "}
                 <a style={{ color: "black" }} href="https://www.xpinc.com/">
-                    <b>META</b>
+                    <b>XP Inc.</b>
                 </a>
                 , um dos meus maiores hobbies é basquete e automação.
             </p>
