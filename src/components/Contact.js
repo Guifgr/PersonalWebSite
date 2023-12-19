@@ -7,7 +7,7 @@ function Contact(){
         <div style={theSection}>
             <SpacedText text="CONTATO"/>
             
-            <BigText marginBottom="1vh" color="white" text="Entre em contato!"/>
+            <BigText marginBottom="1vh" color="white" text="Entre em contato comigo!"/>
             
             <p style={p}>Mande um email caso precise de mais alguma informação, comentário sobre projeto, orçamentos ou até mesmo para marcar um café!</p>
             
