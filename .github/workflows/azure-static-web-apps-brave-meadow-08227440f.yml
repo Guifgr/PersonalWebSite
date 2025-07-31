@@ -1,46 +1,28 @@
-name: Azure Static Web Apps CI/CD
+name: Deploy to Umbrel
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
 
 jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  build_and_deploy:
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: false
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
+      - name: Build Project
+        run: |
+          # Ajuste estes comandos conforme o build do seu projeto
+          npm install
+          npm run build
+      - name: Deploy to Umbrel via SCP
+        uses: appleboy/scp-action@v0.1.4
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_MEADOW_08227440F }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "build" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
-
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    name: Close Pull Request Job
-    steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_MEADOW_08227440F }}
-          action: "close"
+          host: ${{ secrets.UMBREL_HOST }}
+          username: ${{ secrets.UMBREL_USER }}
+          key: ${{ secrets.UMBREL_SSH_KEY }}
+          source: "build/*"
+          target: "/home/umbrel/sites/guifgr/www/"
