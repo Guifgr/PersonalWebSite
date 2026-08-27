@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -183,5 +185,9 @@ input:focus, textarea:focus {
 
   .Wrapper {
     min-width: unset;
+  }
+
+  .experience-card {
+    word-break: break-word;
   }
 }
