@@ -4,18 +4,11 @@ import "./Section.css";
 function Section() {
     const projects = [
         {
-            title: "Chalés Triunfo",
+            title: "Hub de Assessores XP",
             description:
-                "Sistema web para reservas e gestão de chalés. Front-end em React, backend em .NET, integração com painel administrativo e calendário de disponibilidade.",
-            tags: ["React", ".NET", "SQL Server"],
-            link: "https://github.com/Guifgr/ChalesTriunfo",
-        },
-        {
-            title: "Império das Palmeiras",
-            description:
-                "Landing page institucional para empresa de eventos e catering. Design responsivo, galeria de fotos e formulário de contato com integração direta.",
-            tags: ["React", "CSS", "Formspree"],
-            link: "https://github.com/Guifgr/Imperio-das-Palmeiras",
+                "Plataforma web de alta disponibilidade para milhares de assessores financeiros. Microsserviços em .NET Core com CQRS, APIs REST e mensageria assíncrona. Websockets para atualização em tempo real, SQL Server para persistência e integrações com AWS (Lambda, Step Functions, RDS, Athena). Observabilidade com DataDog.",
+            tags: [".NET Core", "CQRS", "WebSockets", "SQL Server", "AWS Lambda", "Step Functions", "RDS", "Athena", "DataDog"],
+            link: "https://www.linkedin.com/in/guifgr/",
         },
         {
             title: "Self-Hosted Infrastructure",
