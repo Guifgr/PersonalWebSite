@@ -11,6 +11,13 @@ function Section() {
             link: "https://www.linkedin.com/in/guifgr/",
         },
         {
+            title: "ComprAqui",
+            description:
+                "Plataforma de automação para serviços de alimentação. Real-time com SignalR, cache com Redis e persistência em MariaDB.",
+            tags: ["SignalR", "Redis", "MariaDB"],
+            link: "https://github.com/Guifgr",
+        },
+        {
             title: "Self-Hosted Infrastructure",
             description:
                 "Infraestrutura self-hosted em Ubuntu com Docker, Portainer, Cloudflare Tunnels e Tailscale. Hospeda CouchDB, ntfy, Wiki.js, Immich e automação com n8n.",
