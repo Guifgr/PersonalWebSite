@@ -1,10 +1,22 @@
 .contact-row {
     display: flex;
     gap: 1rem;
+    width: 100%;
+}
+
+.contact-row input {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
     .contact-row {
         flex-direction: column;
+    }
+
+    .contact-row input {
+        width: 100%;
+        flex: none;
     }
 }
