@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    # A mágica acontece aqui: ele diz ao Portainer para ler o Dockerfile e fabricar a imagem
+    build: .
+    container_name: guifgr-web
+    restart: always
+    ports:
+      - "8082:80"

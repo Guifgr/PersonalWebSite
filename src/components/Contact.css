@@ -1,0 +1,10 @@
+.contact-row {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,97 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '18'
+  SERVER_WEB_DIR: '/home/guifgr/guifgr-web'
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy to Server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build React app
+        run: npm run build
+        env:
+          CI: false
+
+      - name: Copy nginx config into build
+        run: cp nginx/default.conf build/default.conf || true
+
+      - name: Deploy to server via SSH + rsync
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          port: ${{ secrets.SERVER_SSH_PORT }}
+          username: ${{ secrets.SERVER_SSH_USER }}
+          password: ${{ secrets.SERVER_SSH_PASSWORD }}
+          script: |
+            set -e
+            echo "==> Syncing repo to server..."
+            mkdir -p ${{ env.SERVER_WEB_DIR }}
+            rsync -avz --delete \
+              --exclude='.git' \
+              --exclude='node_modules' \
+              --exclude='build' \
+              --exclude='.github' \
+              --exclude='*.py' \
+              --exclude='push*.py' \
+              --exclude='cf_tunnel.py' \
+              ./ ${{ env.SERVER_WEB_DIR }}/
+            echo "==> Building and restarting containers..."
+            cd ${{ env.SERVER_WEB_DIR }}
+            docker compose up -d --build
+            echo "==> Checking container health..."
+            sleep 10
+            docker compose ps
+
+  build-only:
+    name: Build (no deploy)
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build React app
+        run: npm run build
+        env:
+          CI: false
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build/
+          retention-days: 7
