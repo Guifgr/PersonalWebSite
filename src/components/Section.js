@@ -4,6 +4,13 @@ import "./Section.css";
 function Section() {
     const projects = [
         {
+            title: "Ofertas Públicas — Itaú",
+            description:
+                "Microsserviços críticos para o mercado de capitais. .NET Core com PostgreSQL, Apache Kafka para mensageria assíncrona, AWS (Terraform), Datadog para observabilidade e monitoramento em tempo real.",
+            tags: [".NET Core", "Apache Kafka", "PostgreSQL", "AWS", "Terraform", "Datadog"],
+            link: "https://www.linkedin.com/in/guifgr/",
+        },
+        {
             title: "Hub de Assessores XP",
             description:
                 "Plataforma web de alta disponibilidade para milhares de assessores financeiros. Microsserviços em .NET Core com CQRS, APIs REST e mensageria assíncrona. Websockets para atualização em tempo real, SQL Server para persistência e integrações com AWS (Lambda, Step Functions, RDS, Athena). Observabilidade com DataDog.",
