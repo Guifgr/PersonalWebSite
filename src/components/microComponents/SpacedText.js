@@ -1,33 +1,19 @@
 import React from "react";
-import euImg from "../../img/eu.webp";
 
-function Picture() {
+function SpacedText(props) {
     return (
-        <div
-            className="half"
-            style={{
-                float: "right",
-                marginRight: "15%",
-                width: "34.5%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "flex-start",
-                paddingTop: "1rem",
-            }}
-        >
-            <img
-                src={euImg}
-                alt="Guilherme Rocha"
-                style={{
-                    width: "100%",
-                    maxWidth: "300px",
-                    borderRadius: "12px",
-                    border: "2px solid var(--border)",
-                    boxShadow: "0 8px 32px rgba(0,0,0,0.4)",
-                }}
-            />
-        </div>
+        <h6 style={{
+            textAlign: "center",
+            fontSize: "0.85rem",
+            fontWeight: 500,
+            letterSpacing: "0.3em",
+            color: "var(--accent-light)",
+            textTransform: "uppercase",
+            marginBottom: "0.5rem",
+        }}>
+            {props.text}
+        </h6>
     );
 }
 
-export default Picture;
+export default SpacedText;
