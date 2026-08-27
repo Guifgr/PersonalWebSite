@@ -4,25 +4,25 @@ import "./Section.css";
 function Section() {
     const projects = [
         {
-            title: "ComprAqui Platform",
+            title: "Chalés Triunfo",
             description:
-                "Plataforma de automação para serviços de alimentação. Real-time com SignalR, cache com Redis e persistência em MariaDB.",
-            tags: ["SignalR", "Redis", "MariaDB"],
-            link: "https://github.com/Guifgr",
+                "Sistema web para reservas e gestão de chalés. Front-end em React, backend em .NET, integração com painel administrativo e calendário de disponibilidade.",
+            tags: ["React", ".NET", "SQL Server"],
+            link: "https://github.com/Guifgr/ChalesTriunfo",
+        },
+        {
+            title: "Império das Palmeiras",
+            description:
+                "Landing page institucional para empresa de eventos e catering. Design responsivo, galeria de fotos e formulário de contato com integração direta.",
+            tags: ["React", "CSS", "Formspree"],
+            link: "https://github.com/Guifgr/Imperio-das-Palmeiras",
         },
         {
             title: "Self-Hosted Infrastructure",
             description:
-                "Infraestrutura self-hosted com Docker/Portainer, automação com n8n, túnel reverso via Cloudflare Tunnels e VPN mesh com Tailscale.",
-            tags: ["Docker", "Portainer", "n8n", "Cloudflare", "Tailscale"],
+                "Infraestrutura self-hosted em Ubuntu com Docker, Portainer, Cloudflare Tunnels e Tailscale. Hospeda CouchDB, ntfy, Wiki.js, Immich e automação com n8n.",
+            tags: ["Docker", "Linux", "Cloudflare", "Tailscale", "CouchDB"],
             link: "https://github.com/Guifgr",
-        },
-        {
-            title: "Exron",
-            description:
-                "Projeto pessoal de código aberto. Explore no GitHub.",
-            tags: [".NET", "C#", "ASP.NET Core"],
-            link: "https://github.com/Guifgr/Exron",
         },
     ];
 
