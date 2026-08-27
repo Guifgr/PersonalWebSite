@@ -1,7 +1,24 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css";
 
 function Contact() {
+    const [state, handleSubmit] = useForm("xkjnwynd");
+
+    if (state.succeeded) {
+        return (
+            <section id="contato" style={sectionStyle}>
+                <div style={containerStyle}>
+                    <p style={sectionLabel}>CONTATO</p>
+                    <p style={subtitleStyle}>Mensagem enviada!</p>
+                    <p style={descStyle}>
+                        Obrigado pelo contato. Vou ler sua mensagem e responder o mais breve possível.
+                    </p>
+                </div>
+            </section>
+        );
+    }
+
     return (
         <section id="contato" style={sectionStyle}>
             <div style={containerStyle}>
@@ -12,24 +29,23 @@ function Contact() {
                     orçamentos ou até mesmo para marcar um café!
                 </p>
 
-                <form method="post" action="mailto:guifgr@users.noreply.github.com" style={formStyle}>
+                <form onSubmit={handleSubmit} style={formStyle}>
                     <div className="contact-row">
                         <input
                             style={inputStyle}
                             type="text"
                             id="nome"
                             placeholder="Nome"
-                            title="nome"
                             name="nome"
-                        ></input>
+                            required
+                        />
                         <input
                             style={inputStyle}
                             type="text"
                             id="sobrenome"
                             placeholder="Sobrenome"
-                            title="sobrenome"
                             name="sobrenome"
-                        ></input>
+                        />
                     </div>
                     <div className="contact-row">
                         <input
@@ -37,17 +53,16 @@ function Contact() {
                             type="email"
                             id="email"
                             placeholder="Email"
-                            title="email"
                             name="email"
-                        ></input>
+                            required
+                        />
                         <input
                             style={inputStyle}
                             type="tel"
                             id="telefone"
                             placeholder="Telefone"
-                            title="telefone"
                             name="telefone"
-                        ></input>
+                        />
                     </div>
                     <div style={textareaWrapperStyle}>
                         <textarea
@@ -56,13 +71,19 @@ function Contact() {
                             placeholder="Escreva aqui sua mensagem..."
                             name="message"
                             id="messageText"
-                        ></textarea>
+                            required
+                        />
+                        <ValidationError prefix="Message" field="message" errors={state.errors} />
                     </div>
 
                     <div style={btnDivStyle}>
-                        <button style={btnStyle} type="submit">Enviar</button>
+                        <button style={btnStyle} type="submit" disabled={state.submitting}>
+                            {state.submitting ? "Enviando..." : "Enviar"}
+                        </button>
                     </div>
                 </form>
+
+                <ValidationError errors={state.errors} />
 
                 <p style={linkedInNoteStyle}>
                     Ou me encontre no{" "}
@@ -125,19 +146,6 @@ const formStyle = {
     gap: "1rem",
 };
 
-const inputStyle = {
-    flex: 1,
-    height: "50px",
-    padding: "0 1rem",
-    backgroundColor: "var(--bg-card)",
-    border: "1px solid var(--border)",
-    borderRadius: "6px",
-    color: "var(--text-primary)",
-    fontSize: "0.95rem",
-    outline: "none",
-    transition: "border-color 0.2s ease",
-};
-
 const textareaWrapperStyle = {
     width: "100%",
 };
@@ -185,6 +193,19 @@ const linkedInNoteStyle = {
 const linkedInLinkStyle = {
     color: "var(--accent-light)",
     fontWeight: 600,
+};
+
+const inputStyle = {
+    flex: 1,
+    height: "50px",
+    padding: "0 1rem",
+    backgroundColor: "var(--bg-card)",
+    border: "1px solid var(--border)",
+    borderRadius: "6px",
+    color: "var(--text-primary)",
+    fontSize: "0.95rem",
+    outline: "none",
+    transition: "border-color 0.2s ease",
 };
 
 export default Contact;
