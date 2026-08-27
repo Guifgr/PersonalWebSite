@@ -15,7 +15,7 @@ function Experience() {
             role: "Software Engineer III → II",
             period: "Nov 2023 – Set 2025 · 1 ano e 11 meses",
             description:
-                "CQRS, .NET Core/ASP.NET, APIs REST, mensageria assíncrona, xUnit.",
+                "Desenvolvedor no Hub de Assessores XP — plataforma crítica para milhares de assessores financeiros. CQRS, .NET Core/ASP.NET, APIs REST, mensageria assíncrona, xUnit. Pesquisa e implementação de soluções baseadas em análise de mercado e infraestrutura web.",
         },
         {
             company: "Meta",
